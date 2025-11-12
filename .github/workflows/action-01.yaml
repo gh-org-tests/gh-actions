@@ -1,4 +1,4 @@
-name: Action-01
+name: allow-merge
 
 on:
   workflow_dispatch:
