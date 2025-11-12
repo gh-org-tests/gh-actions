@@ -8,7 +8,6 @@ on:
     types: [opened, synchronize, reopened]
 jobs:
   build:
-#    if: github.repository == 'dyazgi/HarmonieCSC'
     runs-on: [ "ubuntu-latest"]
     steps:
       - name: Step-01
