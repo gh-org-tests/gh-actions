@@ -1,0 +1,15 @@
+name: Action-01
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr: {required: true}
+
+jobs:
+  build:
+#    if: github.repository == 'dyazgi/HarmonieCSC'
+    runs-on: [ "ubuntu-latest"]
+    steps:
+      - name: Step-01
+        run: |
+          Echo "I'm Action Action-01"
