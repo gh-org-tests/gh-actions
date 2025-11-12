@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       pr: {required: true}
-
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
   build:
 #    if: github.repository == 'dyazgi/HarmonieCSC'
