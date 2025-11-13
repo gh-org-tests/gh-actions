@@ -12,12 +12,15 @@ if [[ -z "${files}" ]]; then
   exit 0
 fi
 
+counter=$(cat counter.txt)
+echo $(( $counter + 1 )) > counter.txt
 # Base title from args or a default
 base_title="${*:-update}"
 
 # ISO timestamp + random token to vary the commit subject
 ts="$(date +"%Y-%m-%d")"
-token="$(printf '%04d' $RANDOM)"
+#token="$(printf '%04d' $RANDOM)"
+token=$counter
 subject="${base_title}: ${ts} [${token}]"
 
 # Commit with a body listing files (one per line)
