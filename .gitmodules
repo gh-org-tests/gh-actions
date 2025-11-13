@@ -1,0 +1,3 @@
+[submodule "sub01"]
+	path = sub01
+	url = git@github.com:gh-org-tests/gh-actions-submodules-sub01.git
