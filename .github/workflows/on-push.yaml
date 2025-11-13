@@ -13,3 +13,4 @@ jobs:
           echo "Workflow: $GITHUB_WORKFLOW"
           echo "Job ID (env): $GITHUB_JOB"
           echo "Job ID (context): ${{ github.job }}"
+          exit 1
