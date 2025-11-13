@@ -16,7 +16,7 @@ fi
 base_title="${*:-update}"
 
 # ISO timestamp + random token to vary the commit subject
-ts="$(date +"%Y-%m-%dd")"
+ts="$(date +"%Y-%m-%d")"
 token="$(printf '%04d' $RANDOM)"
 subject="${base_title}: ${ts} [${token}]"
 
