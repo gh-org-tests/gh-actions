@@ -3,12 +3,12 @@ on:
   push:
     paths:
       - .github/workflows/on-push.yaml
-      
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: print job/workflow
+      - name: on-push-step-01
         run: |
           echo "Workflow: $GITHUB_WORKFLOW"
           echo "Job ID (env): $GITHUB_JOB"
