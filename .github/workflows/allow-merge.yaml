@@ -8,7 +8,7 @@ on:
     types: [opened, synchronize, reopened]
     
 jobs:
-  build:
+  job-1:
     runs-on: [ "ubuntu-latest"]
     steps:
       - name: allow-merge-step-01
