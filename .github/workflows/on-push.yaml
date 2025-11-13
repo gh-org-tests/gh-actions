@@ -1,0 +1,15 @@
+name: on-push
+on:
+  push:
+    paths:
+      - .github/workflows/on-push.yaml
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print job/workflow
+        run: |
+          echo "Workflow: $GITHUB_WORKFLOW"
+          echo "Job ID (env): $GITHUB_JOB"
+          echo "Job ID (context): ${{ github.job }}"

@@ -1,6 +1,8 @@
 name: allow-merge
 
 on:
+  push:
+    
   workflow_dispatch:
     inputs:
       pr: {required: true}
