@@ -13,4 +13,7 @@ jobs:
           echo "Workflow: $GITHUB_WORKFLOW"
           echo "Job ID (env): $GITHUB_JOB"
           echo "Job ID (context): ${{ github.job }}"
+          echo "triggered by branch: ${{github.ref}}"
+          echo "triggered by commit: ${{github.sha}}"
+ 
           exit 1 #
