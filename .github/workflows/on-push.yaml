@@ -5,7 +5,7 @@ on:
       - .github/workflows/on-push.yaml
 
 jobs:
-  on-push-job-1:
+  on-push-job:
     runs-on: ubuntu-latest
     steps:
       - name: on-push-step-01
