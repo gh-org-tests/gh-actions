@@ -1,15 +1,18 @@
 name: allow-merge
 
-on:
+on:    
   workflow_dispatch:
     inputs:
       pr: {required: true}
   pull_request:
     types: [opened, synchronize, reopened]
+    
 jobs:
   build:
     runs-on: [ "ubuntu-latest"]
     steps:
-      - name: Step-01
+      - name: allow-merge-step-01
         run: |
-          Echo "I'm Action Action-01"
+          echo "Workflow: $GITHUB_WORKFLOW"
+          echo "Job ID (env): $GITHUB_JOB"
+          echo "Job ID (context): ${{ github.job }}"
