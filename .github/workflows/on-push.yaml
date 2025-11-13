@@ -1,4 +1,6 @@
 name: on-push
+description: |
+  Runs if any thing changes
 on:
   push:
     paths:
